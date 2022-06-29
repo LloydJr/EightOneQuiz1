@@ -44,10 +44,10 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        String myString = value;
+        String myString = value.replaceAll(String.valueOf(charToRemove), "");
 //        myString = charToRemove.substring();
 
-        return myString.replaceAll(charToRemove, "");
+        return myString;
 //        I thought I could remove the character like this, but it required a string, and I could
 //        not find a way to do that.
     }
