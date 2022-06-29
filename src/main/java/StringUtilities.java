@@ -5,7 +5,8 @@ public class StringUtilities {
      * @return `input`
      */
     public String returnInput(String input) {
-        return null;
+
+        return input;
     }
 
     /**
@@ -14,7 +15,8 @@ public class StringUtilities {
      * @return the concatenation of `baseValue` and `valueToBeAdded`
      */
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+
+        return (baseValue + valueToBeAdded);
     }
 
     /**
@@ -22,15 +24,18 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-        return null;
+        StringBuilder myString = new StringBuilder(valueToBeReversed);
+
+        return myString.reverse().toString();
     }
 
     /**
      * @param word word to get middle character of
      * @return middle character of `word`
      */
-    public Character getMiddleCharacter(String word) {
+    public String getMiddleCharacter(String word) {
         return null;
+//        I was not able to start this
     }
 
     /**
@@ -39,7 +44,12 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+        String myString = value;
+//        myString = charToRemove.substring();
+
+        return myString.replaceAll(charToRemove, "");
+//        I thought I could remove the character like this, but it required a string, and I could
+//        not find a way to do that.
     }
 
     /**
@@ -47,6 +57,11 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        String theLastWord = sentence;
+//        String mySting = theLastWord.substring(theLastWord.indexOf(" ") + 1);
+//        ^^^^I kept trying this code, but it only removed the first word of the sting :(
+        String[] phrase = theLastWord.split(" ");
+        String myString = phrase[phrase.length - 1];
+        return myString;
     }
 }

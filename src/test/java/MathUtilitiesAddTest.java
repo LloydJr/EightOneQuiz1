@@ -18,13 +18,13 @@ public class MathUtilitiesAddTest
     @Test
     public void testAddInteger(){
         //Given
-        int expected = 15;
+        double expected = 15;
 
         //When
-        int actual = utilities.add(7, 8);
+        double actual = utilities.add(7, 8);
 
         //Then
-        assertEquals(expected, actual);
+        assertEquals(expected, actual, DELTA);
     }
 
     @Test

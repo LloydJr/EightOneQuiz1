@@ -18,10 +18,11 @@ public class StringUtilsGetMiddleCharacterTest {
     public void test1(){
         //Given
         String word = "Aggadah";
-        char expected = 'a';
+        String expected = 'a';
 
         //When
-        char actual = utilities.getMiddleCharacter(word);
+        String actual = utilities.getMiddleCharacter(word);
+
 
         //Then
         assertEquals(expected, actual);
@@ -31,10 +32,11 @@ public class StringUtilsGetMiddleCharacterTest {
     public void test2(){
         //Given
         String word = "information";
-        char expected = 'm';
+
+        String expected = 'm';
 
         //When
-        char actual = utilities.getMiddleCharacter(word);
+        String actual = utilities.getMiddleCharacter(word);
 
         //Then
         assertEquals(expected, actual);
@@ -44,10 +46,10 @@ public class StringUtilsGetMiddleCharacterTest {
     public void test3(){
         //Given
         String word = "reification";
-        char expected = 'c';
+        String expected = 'c';
 
         //When
-        char actual = utilities.getMiddleCharacter(word);
+        String actual = utilities.getMiddleCharacter(word);
 
         //Then
         assertEquals(expected, actual);
@@ -58,10 +60,10 @@ public class StringUtilsGetMiddleCharacterTest {
     public void test4(){
         //Given
         String word = "ohm";
-        char expected = 'h';
+        String expected = 'h';
 
         //When
-        char actual = utilities.getMiddleCharacter(word);
+        String actual = utilities.getMiddleCharacter(word);
 
         //Then
         assertEquals(expected, actual);
