@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 import static jdk.nashorn.internal.objects.NativeString.charAt;
 
 public class LoopFun
@@ -31,7 +33,7 @@ public class LoopFun
               firstLetter.append(s.charAt(0));
           }
 
-          return firstLetter.toString();
+          return firstLetter.toString().toUpperCase();
       }
 
       /**
@@ -47,11 +49,11 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          String text = word;
-          char[] chars = text.toCharArray();
-          for(char c : chars) {
-              c += 3;
-          }
-          return c ;
+//          String text = word;
+//          char[] chars = text.toCharArray();
+//          for(char c : chars) {
+//              c += 3;
+//          }
+          return null ;
       }
 }
