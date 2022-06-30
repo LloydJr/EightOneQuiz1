@@ -27,6 +27,7 @@ public class StringUtilities {
         StringBuilder myString = new StringBuilder(valueToBeReversed);
 
         return myString.reverse().toString();
+//        return StringBuilder(valueToBeReversed).reverse().toString;
     }
 
     /**
@@ -47,8 +48,9 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        String myString = value.replaceAll(String.valueOf(charToRemove), "");
-        return myString;
+//        String myString = value.replaceAll(String.valueOf(charToRemove), "");
+//        return myString;
+        return value.replaceAll(String.valueOf(charToRemove), "");
     }
 
     /**
@@ -56,9 +58,12 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        String theLastWord = sentence;
-        String[] phrase = theLastWord.split(" ");
-        String myString = phrase[phrase.length - 1];
-        return myString;
+//        String theLastWord = sentence;
+//        String[] phrase = theLastWord.split(" ");
+//        String myString = phrase[phrase.length - 1];
+//        return myString;
+        String[] phrase = sentence.split(" ");
+        return phrase[phrase.length - 1];
+
     }
 }

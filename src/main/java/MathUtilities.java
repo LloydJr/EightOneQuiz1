@@ -43,6 +43,7 @@ public class MathUtilities{
           return false;
       }else {
           return true;
+//          return number % 2 == 1; is a faster way of doing it
       }
   }
 
