@@ -34,8 +34,11 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public String getMiddleCharacter(String word) {
-        return null;
-//        I was not able to start this
+
+//       int length = word.length();
+//       int middle = length / 2;
+//        return String.valueOf(word.charAt(middle));
+        return String.valueOf(word.charAt(word.length() / 2));
     }
 
     /**
@@ -54,8 +57,6 @@ public class StringUtilities {
      */
     public String getLastWord(String sentence) {
         String theLastWord = sentence;
-//        String mySting = theLastWord.substring(theLastWord.indexOf(" ") + 1);
-//        ^^^^I kept trying this code, but it only removed the first word of the sting :(
         String[] phrase = theLastWord.split(" ");
         String myString = phrase[phrase.length - 1];
         return myString;
