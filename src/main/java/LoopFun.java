@@ -1,9 +1,10 @@
- 
+import static jdk.nashorn.internal.objects.NativeString.charAt;
 
 public class LoopFun
 {
 
-      /**
+
+    /**
        * Given a number, return the factorial of that number.
        * For example, given 5, the factorial is 5 x 4 x 3 x 2 x 1 which should return 120.
        * @param number
@@ -27,7 +28,7 @@ public class LoopFun
       public String acronym(String phrase) {
           StringBuilder firstLetter = new StringBuilder();
           for (String s : phrase.split(" ")) {
-              firstLetter.append(s.charAt(0)); //I was not so sure how to upperCase the acronyms
+              firstLetter.append(s.charAt(0));
           }
 
           return firstLetter.toString();
@@ -46,12 +47,11 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          String[] array = {word};
-          int myString = Integer.parseInt(word);
-          for (int i = (myString + 3); i >= 0; i++){
-              array[i + 1] = array[i];
+          String text = word;
+          char[] chars = text.toCharArray();
+          for(char c : chars) {
+              c += 3;
           }
-          return word;
-//          Could not complete, I am still trying work things out
+          return c ;
       }
 }
